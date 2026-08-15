@@ -1,0 +1,390 @@
+# ============================================================
+# AI Skin Lesion Classifier - .gitignore
+# ============================================================
+
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.so
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+
+# ============================================================
+# VIRTUAL ENVIRONMENTS
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+.venv-1/
+
+
+# ============================================================
+# PYTHON / UV / ENVIRONMENT TOOLS
+# ============================================================
+
+.python-version
+.uv/
+uv.lock
+
+# Python source/installers accidentally placed in project
+Python-3.11.15/
+
+
+# ============================================================
+# JUPYTER NOTEBOOKS
+# ============================================================
+
+.ipynb_checkpoints/
+
+# Jupyter temporary files
+*.ipynb_checkpoints
+
+
+# ============================================================
+# DATASET
+# ============================================================
+
+# Raw datasets
+data/raw/
+
+# Processed/generated datasets
+data/processed/
+
+# Dataset cache
+data/cache/
+
+# Large CSV/JSON data files
+*.csv
+*.json
+
+# IMPORTANT:
+# If you create small metadata files that you intentionally
+# want in Git, use ! to explicitly allow them.
+#
+# Example:
+# !data/metadata/class_mapping.csv
+
+
+# ============================================================
+# MACHINE LEARNING MODELS
+# ============================================================
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# TensorFlow / Keras
+*.h5
+*.keras
+
+# ONNX
+*.onnx
+
+# TensorFlow Lite
+*.tflite
+
+# TensorFlow SavedModel
+saved_model/
+
+# Model checkpoints
+checkpoints/
+
+# Weights
+weights/
+
+# Large model directories
+models/checkpoints/
+
+
+# ============================================================
+# MACHINE LEARNING EXPERIMENT OUTPUTS
+# ============================================================
+
+runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# TensorBoard
+logs/
+tensorboard/
+
+# Experiment outputs
+experiments/output/
+experiments/results/
+
+
+# ============================================================
+# IMAGE / VIDEO / LARGE GENERATED FILES
+# ============================================================
+
+# Don't accidentally commit downloaded/generated images
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.bmp
+*.tif
+*.tiff
+
+# Exceptions:
+# If you intentionally want a small architecture diagram or
+# README image tracked, explicitly allow it.
+#
+# Example:
+# !docs/images/architecture.png
+
+
+# Video
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+
+# ============================================================
+# IDE / EDITOR
+# ============================================================
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+
+# ============================================================
+# OPERATING SYSTEM
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+
+# ============================================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+
+# API keys / credentials
+secrets/
+credentials/
+config.local.*
+
+
+# ============================================================
+# DATABASES
+# ============================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Database backups
+*.sql
+*.dump
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
+*.log
+logs/
+
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+*.cache
+
+
+# ============================================================
+# ZIP / ARCHIVES
+# ============================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+
+# ============================================================
+# NODE / FRONTEND
+# ============================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.pnpm-debug.log*
+
+dist/
+.next/
+.nuxt/
+.cache/
+
+
+# ============================================================
+# ANDROID / GRADLE
+# ============================================================
+
+.gradle/
+.idea/
+build/
+captures/
+
+local.properties
+
+*.apk
+*.aab
+
+# Android generated files
+.externalNativeBuild/
+.cxx/
+
+
+# ============================================================
+# FLUTTER
+# ============================================================
+
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+.pub-cache/
+.pub/
+
+build/
+
+# Flutter generated files
+*.lock
+
+
+# ============================================================
+# FASTAPI / BACKEND TEMP FILES
+# ============================================================
+
+instance/
+
+# Uploaded user images
+uploads/
+temp_uploads/
+
+
+# ============================================================
+# GENERATED DOCUMENTATION / REPORTS
+# ============================================================
+
+# Uncomment these if reports become generated automatically:
+# reports/generated/
+# docs/generated/
+
+
+# ============================================================
+# LOCAL DEVELOPMENT
+# ============================================================
+
+local/
+tmp/
+temp/
+
+# OS/editor history
+.history/
+
+
+# ============================================================
+# PROJECT-SPECIFIC LARGE FILES
+# ============================================================
+
+# HAM10000
+data/raw/HAM10000/
+data/raw/HAM10000_images_part_1/
+data/raw/HAM10000_images_part_2/
+
+# Any future ISIC datasets
+data/raw/ISIC/
+
+# PH2 dataset
+data/raw/PH2/
+
+
+# ============================================================
+# KEEP THESE IN GIT
+# ============================================================
+
+# Example environment template
+!.env.example
+
+# Project documentation
+!README.md
+!docs/
+
+# Source code
+!src/
+
+# Tests
+!tests/
+
+# Notebooks
+!notebooks/
+
+# Requirements
+!requirements.txt
+!requirements*.txt
